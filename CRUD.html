@@ -9,11 +9,11 @@
     
 <h1>Book List</h1>
 
-
+<!-- 
 <form id="search">
     <input type="text">
     <button id="searchbtn">검색하기</button>
-</form>
+</form> -->
 
 <form id="input">
     <p>도서 제목 </p>
@@ -31,23 +31,12 @@
 </form>
 <button>추가하기</button>
 
-<p>도서 목록</p>
+<table>
+    <thead>
+        <tr><th>제목</th><th>저자</th><th>출판일</th><th>평점</th></tr>
+    </thead>
+</table>
+
 </body>
 
-<script>
-async function loadStudents() {
-    const response = await fetch("https://6ae1b574bbb541292299076b.mockapi.io/Book");
-
-    if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
-    }
-
-    const students = await response.json();
-    renderStudents(students);
-}
-
-
-
-
-</script>
 </html>
