@@ -8,12 +8,9 @@
 <body>
     
 <h1>Book List</h1>
-
-<!-- 
-<form id="search">
-    <input type="text">
-    <button id="searchbtn">검색하기</button>
-</form> -->
+<input type="text" id="search">
+<button type ="button" onclick="searchBooks()">검색</button>
+<butotn type="button" onclick="getBooks()">전체목록</butotn>
 
 <form id="input">
     <p>도서 제목 </p>
@@ -28,13 +25,14 @@
     <input type="radio" name="rating" value="3">3점 
     <input type="radio" name="rating" value="4">4점 
     <input type="radio" name="rating" value="5">5점 
-</form>
 <button>추가하기</button>
+</form>
 
 <table>
     <thead>
         <tr><th>제목</th><th>저자</th><th>출판일</th><th>평점</th></tr>
     </thead>
+    <tbody id="BookList"></tbody>
 </table>
 
 </body>
