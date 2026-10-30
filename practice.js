@@ -149,4 +149,4 @@ function editBook(id){
     editingId = id;
 }
 //서버와 통신하는 JS - get,post,patch,delete
-//html을 조작하는 JS - render,edit,showMessage
+//html을 조작하는 JS - render,edit,showMessage, search
