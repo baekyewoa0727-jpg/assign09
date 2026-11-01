@@ -5,3 +5,46 @@
 
 //HTML의 validtion을 구성했는데 나중에는 jsvalidation을 적용하는 방법으로 코드를 작성해보고 싶다 
 js의 경우 공백만 입력하는 경우도 validarion으로 처리 가능하다는 내용이 흥미로웠다. 
+validation을 html로만 구현하려 했는데 내가 선택한 조건의 rating은 1-5까지의 정수만을 제한해야한다는 조건이 붙기 때문에 js로 rating의 validation을 제한했다 
+
+22400330 백예원
+
+link :
+main - 
+origin - 
+mockAPI -
+
+도서 관리 사이트 
+제목 , 작가 , 출간일, 평점
+crud기능/도서 제목 검색/입력값 validtion - html,js-rating
+
+fetch()와 REST API
+JavaScript의 fetch()를 사용하여 MockAPI 서버와 데이터를 주고받는 방법을 배웠습니다. GET, POST, PUT, DELETE 요청의 역할과 차이점을 이해했습니다.
+JSON
+서버와 데이터를 주고받을 때 JSON 형식을 사용하며, JSON.stringify()와 response.json()을 통해 데이터를 변환하는 방법을 배웠습니다.
+async/await
+서버 통신은 시간이 걸릴 수 있기 때문에 async/await을 사용하여 비동기 작업을 처리하는 방법을 학습했습니다.
+Validation
+HTML의 required 속성을 이용한 기본적인 유효성 검사를 구현했습니다. html뿐 아니라 js도 validation을 구현할 수 있다는것을 알게 되었습니다. 
+이후 JavaScript를 활용하면 공백만 입력하는 경우나 평점이 1~5 범위를 벗어나는 경우도 검사할 수 있다는 것을 배웠고 rating의 경우는 js로 적용시켰습니다. 
+
+
+사용 ai tool : ChatGPT
+사용 목적: JavaScript 코드 이해, 오류 수정, CRUD 기능과 Validation 구현 방법 학습
+참고 또는 반영한 기능: 검색 기능, 입력값 Validation, MockAPI 데이터 처리 관련 코드
+직접 수정한 내용: 검색 기능을 도서 제목만 검색하도록 변경. 평점 조건이 1~5 사이의 숫자로 처리되도록 수정. HTML 입력 조건과 JavaScript의 유효성 검사.
+배운 점: AI가 제공한 코드를 그대로 사용하는 것보다 각 코드의 역할과 작동 원리를 이해하는 것이 중요하다는 점을 배웠습니다.
+AI 코드 기여율: 약 30%
+
+문제 및 해결
+과제를 진행하면서 HTML의 Validation과 JavaScript의 Validation이 어떻게 다른지 궁금했습니다.
+
+처음에는 HTML의 required 속성을 이용하여 입력값을 검사했습니다. 하지만 공백만 입력하는 경우나 평점이 1~5 사이의 정수인지 확인하는 조건은 JavaScript를 활용하는 것이 더 적절하다는 점을 알게 되었습니다.
+제가 설정한 평점 입력 부분의 경우는 radio를 사용했는데 required를 넣더라도 공백이나 5를 초과하는 정수가 들어가는 경우가 발생하는 오류가 있어 JS의 기능을 활용하는것이 적절하다는것을 알게 되었습니다 
+HTML의 입력 제한만으로는 서버에 이미 저장된 데이터까지 자동으로 제한할 수 없다는 점을 배웠습니다.
+
+과제시 궁금했던 부분
+백틱(`)은 왜 사용하나요?
+    문자열 안에 ${변수}를 넣어 변수값을 쉽게 삽입할 수 있습니다.
+PUT과 PATCH의 차이는 무엇인가요?
+    PUT은 일반적으로 전체 데이터를 교체하고, PATCH는 일부 데이터만 수정합니다.
