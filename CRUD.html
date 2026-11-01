@@ -9,17 +9,17 @@
 <body>
     
 <h1>Book List</h1>
-<input type="text" id="search">
+<input type="text" id="search" placeholder="작가 혹은 제목을 입력하세요">
 <button type ="button" onclick="searchBooks()">검색</button>
 <button type="button" onclick="getBooks()">전체목록</button>
 
 <form id="input">
     <p>도서 제목 </p>
-    <input type="text" id="titleInput" placeholder="도서 제목을 입력하세요">
+    <input type="text" id="titleInput" placeholder="도서 제목을 입력하세요" required>
     <p>저자</p>
-    <input type="text" id="author" placeholder="작가를 입력하세요">
+    <input type="text" id="author" placeholder="작가를 입력하세요" required>
     <p>출판일</p>
-    <input type="date" id="dateInput" >
+    <input type="date" id="dateInput" required >
     <p>평점</p>
     <input type="radio" name="rating" value="1" required>1점
     <input type="radio" name="rating" value="2">2점 

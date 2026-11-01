@@ -3,3 +3,5 @@
 // 과제를 하면서 궁금한점
 // 1. POST와 PUT/PATCH는 왜 코드가 다른가요? 백틱은 왜 사용하나요?. PUT과 PATCH의 차이점은 무엇인가요?
 
+//HTML의 validtion을 구성했는데 나중에는 jsvalidation을 적용하는 방법으로 코드를 작성해보고 싶다 
+js의 경우 공백만 입력하는 경우도 validarion으로 처리 가능하다는 내용이 흥미로웠다. 
