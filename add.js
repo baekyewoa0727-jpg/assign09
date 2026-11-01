@@ -16,6 +16,7 @@ async function getBooks(){
         showMessage (error.message,"red");
     }
 }
+getBooks();
 
 async function postBooks(book){
     try{
@@ -34,20 +35,7 @@ async function postBooks(book){
     }
 }
 
-async function putBooks(id, book){
-    try{
-        const response = await fetch (API_url,)
-    }
-}
-
-async function deleteBooks(id){
-
-    try {
-        
-    }
-}
-
-document.getElementById("input").addEventListener("submit",async function(event{
+ment.getElementById("input").addEventListener("submit",async function(event{
     
     book {
         title = document.getElementById("title").value,
@@ -57,9 +45,39 @@ document.getElementById("input").addEventListener("submit",async function(event{
 
     }
 
-    if (editingId == null){
+    if (id == null){
         postBooks(book);
     } else{
         putBooks(id, book);
     }
 }))
+
+async function putBooks(id, book){
+    try{
+        const response = await fetch(`${API_url}/${id}`, {
+            method"PUT",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(book)
+        });
+        if(!response.ok) throw new Error("수정 실패");
+        showMessage("수정되었습니다", "green");
+        getBooks();
+    }catch(error){
+        showMessage(error.message,"red");
+    }
+}
+
+async function deleteBooks(id){
+if (confirm("정말 삭제하시겠습니까?")){
+        try {
+        const response = awati fetch(`${API_url}/${id}`, {
+                method: "DELETE"});
+
+                if (!response.ok) throw new Error("삭제 실패");
+                showMessage("삭제 성공", "green");
+                getBooks();
+    } catch(error){
+        showMessage(error.message,"red");
+    }
+}
+}
