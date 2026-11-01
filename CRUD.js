@@ -36,15 +36,19 @@ async function postBooks(book) {
 
 document.getElementById("input").addEventListener("submit", async function (event) {
     event.preventDefault();
+const selectedRating = document.querySelector('input[name="rating"]:checked');
 
-    const book = {
-        title: document.getElementById("titleInput").value,
-        author: document.getElementById("author").value,
-        date: document.getElementById("dateInput").value,
-        rating: document.querySelector('input[name="rating"]:checked').value
+if (!selectedRating) {
+    showMessage("평점을 선택하세요.", "red");
+    return;
+}
 
-    }
-
+const book = {
+    title: document.getElementById("titleInput").value,
+    author: document.getElementById("author").value,
+    date: document.getElementById("dateInput").value,
+    rating: Number(selectedRating.value)
+}
     if (editingId == null) {
         postBooks(book);
     } else {
