@@ -1,18 +1,11 @@
-// 22400330 백예원 
-
-// 과제를 하면서 궁금한점
-// 1. POST와 PUT/PATCH는 왜 코드가 다른가요? 백틱은 왜 사용하나요?. PUT과 PATCH의 차이점은 무엇인가요?
-
-//HTML의 validtion을 구성했는데 나중에는 jsvalidation을 적용하는 방법으로 코드를 작성해보고 싶다 
-js의 경우 공백만 입력하는 경우도 validarion으로 처리 가능하다는 내용이 흥미로웠다. 
-validation을 html로만 구현하려 했는데 내가 선택한 조건의 rating은 1-5까지의 정수만을 제한해야한다는 조건이 붙기 때문에 js로 rating의 validation을 제한했다 
 
 22400330 백예원
 
 link :
-main - 
-origin - 
-mockAPI -
+mine - https://github.com/baekyewoa0727-jpg/assign09.git
+origin - https://github.com/2026-2-OSS/assign09-c02-22400330.git
+mockAPI - https://6ae1b574bbb541292299076b.mockapi.io/Book
+vercel - https://assign09-qn7h.vercel.app/
 
 도서 관리 사이트 
 제목 , 작가 , 출간일, 평점

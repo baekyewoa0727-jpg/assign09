@@ -111,6 +111,7 @@ function renderBooks(bookArray) {
         tbody.appendChild(row);
     });
 }
+
 function searchBooks() {
     const keyword = document.getElementById("search").value;
     const searchResult = books.filter(function (book) {
